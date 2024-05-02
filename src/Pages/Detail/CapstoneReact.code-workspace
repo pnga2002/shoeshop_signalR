@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../JiraCapstone"
+		},
+		{
+			"path": "../../../../../FPT_Polytechnic/JAVA4/formASM"
+		},
+		{
+			"path": "../../../../BAITAP/CapstoneJSGIT"
+		},
+		{
+			"path": "C:/Users/ASUS/Downloads/KFC (1)/KFC"
+		},
+		{
+			"path": "C:/Users/ASUS/Downloads/templatemo_552_video_catalog/templatemo_552_video_catalog"
+		},
+		{
+			"path": "../../../../campingCSS"
+		},
+		{
+			"path": "../../../../BAITAP/btcssMASTERY"
+		},
+		{
+			"path": "../../../../Meipaly"
+		},
+		{
+			"path": "C:/Users/ASUS/Downloads/08-04-2023-10-57-12-buoi4/Buoi4"
+		}
+	],
+	"settings": {
+		"jest.disabledWorkspaceFolders": [
+			"JiraCapstone",
+			"CapstoneReact"
+		],
+		"liveServer.settings.multiRootWorkspaceName": "btcssMASTERY"
+	}
+}

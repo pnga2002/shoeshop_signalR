@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { https, USER_LOGIN, getStoreJson } from '../../util/config'
 import { changeCartQuantity, deleteCart } from '../../redux/reducers/productReducer'
+import { connection } from '../..';
 
 const Carts = () => {
   const {arrCart} = useSelector(state=>state.productReducer)
@@ -82,9 +83,11 @@ const Carts = () => {
                 }
                 console.log(payload);
                 const result = await https.post('/api/Users/order', payload)
+                // connection.invoke('Order')
                 if(result){
                     alert("Oder Thanh Cong")
                 }
+                
             }} className='btn' style={{ background: '#F2994A', float: 'right' }}>SUBMIT ORDER</button>
         </div>
       </div>

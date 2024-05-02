@@ -39,18 +39,18 @@ const Detail = () => {
             </div>
             <h2 style={{ marginTop: '17px', color: '#FC0303' }}>{productDetail?.price} $</h2>
             <div>
-              <button className='btn' style={{ width: '50px', height: '50px', background: 'linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%)', color: '#FFFCFC' }} onClick={() => {
+              <button className='me-1' style={{ width: '50px', height: '50px', background: 'linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%)', color: '#FFFCFC', border:'none' }} onClick={() => {
                 setQuantity(quantity + 1)
               }}>+</button>
               <span>{quantity}</span>
-              <button className='btn' style={{ width: '50px', height: '50px', background: 'linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%)', color: '#FFFCFC' }} onClick={() => {
+              <button className='ms-1' style={{ width: '50px', height: '50px', background: 'linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%)', color: '#FFFCFC', border:'none' }} onClick={() => {
                 if (quantity > 1)
                   setQuantity(quantity - 1)
               }}>-</button>
             </div>
             {/* con thieu check userLogin -> chuyen huong qua /cart */}
 
-            <button className='btn' style={{ background: 'linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%)', width: '175px', height: '64px', marginTop: '7px' }} onClick={() => {
+            <button className=' text-light' style={{ background: 'linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%)', width: '175px', height: '64px', marginTop: '7px',border:'none' }} onClick={() => {
               const userLogin = getStoreJson(USER_LOGIN)
               if (userLogin) {
                 const cart = arrCart.find(cart => cart.id === productDetail.id)
